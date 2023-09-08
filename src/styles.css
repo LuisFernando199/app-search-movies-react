@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+input[type="text"] {
+  width: 18.75rem;
+  padding: 1.25rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+}
+
+button {
+  padding: 1.25rem 2.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 1.25rem;
+}
+
+.movie-card {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.625rem;
+}
+
+.movie-card h2 {
+  font-size: 1.125rem;
+  margin-bottom: 0.3125rem;
+}
+
+.movie-card p {
+  margin-bottom: 0.3125rem;
+}
+
+/* Estilos para móviles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  button {
+    padding: 1rem 2rem;
+  }
+
+  .movie-list {
+    grid-template-columns: repeat(auto-fit, minmax(9.375rem, 1fr));
+  }
+
+  .movie-card {
+    padding: 0.625rem;
+  }
+
+  .movie-card h2 {
+    font-size: 1rem;
+  }
+}
